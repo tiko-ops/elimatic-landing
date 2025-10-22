@@ -11,7 +11,7 @@ export default function ContactForm() {
     setMessage('')
 
     const form = e.currentTarget
-    const data = Object.fromEntries(new FormData(form))
+    const data = Object.fromEntries(new FormData(form).entries())
 
     try {
       const res = await fetch('/api/contact', {
