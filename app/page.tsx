@@ -62,7 +62,7 @@ export default function Page() {
 </svg>
 
 
-	<button id="lovable-badge-close" style="position: absolute; top: -2px; right: 5px; cursor: pointer; font-size: 14px; color: #A1A1AA;">×</button>
+	
 </a>
 
 
