@@ -1,2 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40">
-<text x="0" y="28" font-size="28" font-family="Arial" font-weight="bold" fill="#2b6cb0">ELIMATIC</text></svg>
+<svg 
+    version="1.1" 
+    baseProfile="full" 
+    width="300" 
+    height="300" 
+    xmlns="http://www.w3.org/2000/svg">
+    
+  <!-- Definiera en mjuk, tvåfärgad gradient från lila till röd -->
+  <defs>
+    <linearGradient id="cableGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7F57FF" />
+      <stop offset="100%" stop-color="#FF5F5F" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Kabelns "linje" -->
+  <path 
+    d="M 50 150 
+       C 90 80, 150 80, 190 150 
+       C 220 190, 260 180, 250 120" 
+    fill="none" 
+    stroke="url(#cableGradient)" 
+    stroke-width="10" 
+    stroke-linecap="round" />
+  
+  <!-- Kontakt 1 (vänster) -->
+  <rect 
+    x="40" y="140" 
+    width="15" height="20" 
+    rx="3" ry="3" 
+    fill="url(#cableGradient)" />
+  
+  <!-- Kontakt 2 (höger) -->
+  <rect 
+    x="245" y="110" 
+    width="15" height="20" 
+    rx="3" ry="3" 
+    fill="url(#cableGradient)" />
+  
+  <!-- Exempel på text (anpassa font, storlek, position) -->
+  <text 
+    x="50%" y="270" 
+    font-family="Arial, sans-serif" 
+    font-size="20" 
+    fill="#333" 
+    text-anchor="middle">
+    <!--Elimatic-->
+  </text>
+</svg>
