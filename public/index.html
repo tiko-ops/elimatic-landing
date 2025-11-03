@@ -142,6 +142,16 @@
   </div>
 </section>
 
+<section id="faq" class="section alt">
+  <div class="container faq">
+    <h2 class="centered">FAQ</h2>
+    <details><summary>What data does it use?</summary><p>Your historical purchases/quotes adjusted for currency, inflation, and quantity.</p></details>
+    <details><summary>Can we change the fairness rules?</summary><p>Yes, all factors are configurable for your business.</p></details>
+    <details><summary>Will it work with our ERP?</summary><p>Demo is standalone. Integrations are available for enterprise plans.</p></details>
+    <details><summary>Is our data secure?</summary><p>Data stays local during demo; private hosting available.</p></details>
+  </div>
+</section>
+
 <footer class="footer">
   <div class="container footgrid">
     <a href="#" class="brand foot-brand" aria-label="Elimatic">
@@ -149,10 +159,13 @@
       <span class="brand-text"><span class="brand-word">ELIMAT</span><span class="brand-i">I</span><span class="brand-c">C</span></span>
     </a>
     <div class="small muted">© <span id="yr"></span> Elimatic. All rights reserved.</div>
-    <div class="small"><a href="#features">Features</a> · <a href="#how">How it works</a> · <a href="#demo">Book a Demo</a></div>
+    <div class="small"><a href="#features">Features</a> · <a href="#how">How it works</a> · <a href="#demo">Book a Demo</a> · <a href="#faq">FAQ</a></div>
   </div>
 </footer>
 
-<script src="./script.js"></script>
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const id=a.getAttribute('href').slice(1);const el=document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});}});});
+</script>
 </body>
 </html>
