@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elimatic - Keep track of your cost</title>
+  <meta name="description" content="Elimatic helps procurement and engineering teams keep track of costs and validate PCR design-change prices with confidence.">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" href="./assets/favicon.png">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand"><img src="./assets/logo.svg" class="brand-logo" alt="Elimatic"><span class="brand-name">Elimatic</span></a>
+    <nav class="links">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#demo">Book a Demo</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-center">
+    <h1>Keep track of your cost — approve PCR prices with <span class="accent">confidence</span>.</h1>
+    <p class="sub">Elimatic compares design-change items to your historicals, adjusts for inflation and quantity, and explains every verdict.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#demo"><span>Book a Demo</span></a>
+      <a class="btn ghost" href="#how">See how it works</a>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2>Everything your team needs to justify PCR changes</h2>
+    <div class="features-grid">
+      <div class="feature"><div class="icon">📄</div><h3>Create or upload PCRs</h3><p>Paste line items or upload CSV/Excel. Edit inline, then evaluate instantly.</p></div>
+      <div class="feature"><div class="icon">📈</div><h3>Fair price ranges</h3><p>Percentiles adjusted for currency, inflation, and quantity breaks.</p></div>
+      <div class="feature"><div class="icon">🔍</div><h3>Explainable AI</h3><p>See top comparables, adjustments, and the reasoning behind each verdict.</p></div>
+      <div class="feature"><div class="icon">⚙️</div><h3>Policy controls</h3><p>Configure FX, inflation, and quantity rules to match your standards.</p></div>
+      <div class="feature"><div class="icon">🧾</div><h3>Audit-ready exports</h3><p>Summaries with rationale for every line item for easy approvals.</p></div>
+      <div class="feature"><div class="icon">🛡️</div><h3>Built for teams</h3><p>Consistent, defensible decisions across buyers and engineers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section alt">
+  <div class="container">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><span>1</span> Upload or enter your PCR items.</li>
+      <li><span>2</span> We match to historical comparables and normalize prices.</li>
+      <li><span>3</span> You get fairness scores and explanations.</li>
+      <li><span>4</span> Export results and finalize approvals.</li>
+    </ol>
+    <a class="btn primary" href="#demo"><span>Book a Demo</span></a>
+  </div>
+</section>
+
+<section id="demo" class="section">
+  <div class="container contact">
+    <h2>Book a Demo</h2>
+    <p>Tell us a little about your process and we’ll schedule a walkthrough.</p>
+    <form id="contactForm" class="contact-form">
+      <input required name="name" placeholder="Your name">
+      <input required name="email" type="email" placeholder="Work email">
+      <input name="company" placeholder="Company">
+      <textarea name="message" rows="4" placeholder="What's your current PCR approval flow?"></textarea>
+      <button class="btn primary" type="submit"><span>Request Demo</span></button>
+      <p id="formMsg" class="muted"></p>
+    </form>
+  </div>
+</section>
+
+<section id="faq" class="section alt">
+  <div class="container faq">
+    <h2>FAQ</h2>
+    <details><summary>What data does it use?</summary><p>Your historical purchases/quotes adjusted for currency, inflation, and quantity.</p></details>
+    <details><summary>Can we change the fairness rules?</summary><p>Yes, all factors are configurable for your business.</p></details>
+    <details><summary>Will it work with our ERP?</summary><p>Demo is standalone. Integrations are available for enterprise plans.</p></details>
+    <details><summary>Is our data secure?</summary><p>Data stays local during demo; private hosting available.</p></details>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footgrid">
+    <a href="#" class="brand"><img src="./assets/logo.svg" class="brand-logo" alt=""><span class="brand-name">Elimatic</span></a>
+    <div class="small muted">© <span id="yr"></span> Elimatic. All rights reserved.</div>
+    <div class="small"><a href="#features">Features</a> · <a href="#how">How it works</a> · <a href="#demo">Book a Demo</a></div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
