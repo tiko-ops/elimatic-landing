@@ -12,8 +12,10 @@
 <header class="nav">
   <div class="container nav-inner">
     <a href="#" class="brand" aria-label="Elimatic">
-      <img src="./assets/logo-mark.svg" class="brand-logo" alt="Elimatic logo mark">
-      <span class="brand-text"><span class="brand-word">ELIMAT</span><span class="brand-ic">IC</span></span>
+      <img src="./assets/logo-mark.svg" class="brand-logo" alt="Elimatic logo mark" />
+      <span class="brand-text">
+        <span class="brand-word">ELIMAT</span><span class="brand-i">I</span><span class="brand-c">C</span>
+      </span>
     </a>
     <nav class="links">
       <a href="#features">Features</a>
@@ -63,7 +65,7 @@
       </div>
       <div class="feature">
         <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .66.39 1.26 1 1.51.32.13.66.2 1.01.2H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
         <h3>Policy controls</h3>
         <p>Configure FX, inflation, and quantity rules to match your standards.</p>
@@ -89,12 +91,37 @@
 <section id="how" class="section alt">
   <div class="container">
     <h2 class="centered">How it works</h2>
-    <ol class="steps">
-      <li><span>1</span> Upload or enter your PCR items.</li>
-      <li><span>2</span> We match to historical comparables and normalize prices.</li>
-      <li><span>3</span> You get fairness scores and explanations.</li>
-      <li><span>4</span> Export results and finalize approvals.</li>
-    </ol>
+    <div class="steps-pro">
+      <div class="step">
+        <div class="num">1</div>
+        <div class="content">
+          <h3>Upload or enter your PCR items.</h3>
+          <p>Paste or import CSV/Excel; edit inline and validate in seconds.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <div class="content">
+          <h3>Match to historical comparables</h3>
+          <p>We normalize for currency, inflation, and quantity breaks.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <div class="content">
+          <h3>Fairness scores & explanations</h3>
+          <p>See the evidence behind every verdict — fully explainable.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <div class="content">
+          <h3>Export & finalize approvals</h3>
+          <p>Generate audit-ready summaries for fast sign-off.</p>
+        </div>
+      </div>
+      <div class="connector"></div>
+    </div>
     <div class="center"><a class="btn primary" href="#demo"><span>Book a Demo</span></a></div>
   </div>
 </section>
@@ -102,7 +129,6 @@
 <section id="demo" class="section">
   <div class="container contact">
     <h2 class="centered">Book a Demo</h2>
-    <p class="centered">Tell us a little about your process and we’ll schedule a walkthrough.</p>
     <form id="contactForm" class="contact-form">
       <input required name="name" placeholder="Your name">
       <input required name="email" type="email" placeholder="Work email">
@@ -114,21 +140,11 @@
   </div>
 </section>
 
-<section id="faq" class="section alt">
-  <div class="container faq">
-    <h2 class="centered">FAQ</h2>
-    <details><summary>What data does it use?</summary><p>Your historical purchases/quotes adjusted for currency, inflation, and quantity.</p></details>
-    <details><summary>Can we change the fairness rules?</summary><p>Yes, all factors are configurable for your business.</p></details>
-    <details><summary>Will it work with our ERP?</summary><p>Demo is standalone. Integrations are available for enterprise plans.</p></details>
-    <details><summary>Is our data secure?</summary><p>Data stays local during demo; private hosting available.</p></details>
-  </div>
-</section>
-
 <footer class="footer">
   <div class="container footgrid">
     <a href="#" class="brand foot-brand" aria-label="Elimatic">
       <img src="./assets/logo-mark.svg" class="brand-logo" alt="Elimatic logo mark">
-      <span class="brand-text"><span class="brand-word">ELIMAT</span><span class="brand-ic">IC</span></span>
+      <span class="brand-text"><span class="brand-word">ELIMAT</span><span class="brand-i">I</span><span class="brand-c">C</span></span>
     </a>
     <div class="small muted">© <span id="yr"></span> Elimatic. All rights reserved.</div>
     <div class="small"><a href="#features">Features</a> · <a href="#how">How it works</a> · <a href="#demo">Book a Demo</a></div>
