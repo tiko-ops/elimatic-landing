@@ -111,3 +111,10 @@ a{color:inherit;text-decoration:none}
   }
 }
 
+@media (max-width: 720px) {
+  .features > * {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
