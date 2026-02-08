@@ -60,4 +60,12 @@ a{color:inherit;text-decoration:none}
     word-break: normal;
   }
 }
+@media (max-width: 640px) {
+  .links{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: 6px;
+  }
+  .links a{ line-height: 1.2; }
+}
 
