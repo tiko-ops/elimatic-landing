@@ -1,0 +1,12 @@
+<svg viewBox="30 70 240 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cableGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0A374" />
+      <stop offset="100%" stop-color="#B5703F" />
+    </linearGradient>
+  </defs>
+  <path d="M50 150 C90 80 150 80 190 150 C220 190 260 180 250 120"
+        fill="none" stroke="url(#cableGradient)" stroke-width="13" stroke-linecap="round" />
+  <rect x="37" y="138" width="17" height="23" rx="3.5" fill="url(#cableGradient)" />
+  <rect x="243" y="107" width="17" height="23" rx="3.5" fill="url(#cableGradient)" />
+</svg>
