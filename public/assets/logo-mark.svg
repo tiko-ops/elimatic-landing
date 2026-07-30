@@ -1,49 +1,12 @@
-<svg 
-    version="1.1" 
-    baseProfile="full" 
-    width="300" 
-    height="300" 
-    xmlns="http://www.w3.org/2000/svg">
-    
-  <!-- Definiera en mjuk, tvåfärgad gradient från lila till röd -->
+<svg viewBox="30 70 240 130" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="cableGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7F57FF" />
-      <stop offset="100%" stop-color="#FF5F5F" />
+      <stop offset="0%" stop-color="#E0A374" />
+      <stop offset="100%" stop-color="#B5703F" />
     </linearGradient>
   </defs>
-  
-  <!-- Kabelns "linje" -->
-  <path 
-    d="M 50 150 
-       C 90 80, 150 80, 190 150 
-       C 220 190, 260 180, 250 120" 
-    fill="none" 
-    stroke="url(#cableGradient)" 
-    stroke-width="10" 
-    stroke-linecap="round" />
-  
-  <!-- Kontakt 1 (vänster) -->
-  <rect 
-    x="40" y="140" 
-    width="15" height="20" 
-    rx="3" ry="3" 
-    fill="url(#cableGradient)" />
-  
-  <!-- Kontakt 2 (höger) -->
-  <rect 
-    x="245" y="110" 
-    width="15" height="20" 
-    rx="3" ry="3" 
-    fill="url(#cableGradient)" />
-  
-  <!-- Exempel på text (anpassa font, storlek, position) -->
-  <text 
-    x="50%" y="270" 
-    font-family="Arial, sans-serif" 
-    font-size="20" 
-    fill="#333" 
-    text-anchor="middle">
-    <!--Elimatic-->
-  </text>
+  <path d="M50 150 C90 80 150 80 190 150 C220 190 260 180 250 120"
+        fill="none" stroke="url(#cableGradient)" stroke-width="13" stroke-linecap="round" />
+  <rect x="37" y="138" width="17" height="23" rx="3.5" fill="url(#cableGradient)" />
+  <rect x="243" y="107" width="17" height="23" rx="3.5" fill="url(#cableGradient)" />
 </svg>

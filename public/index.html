@@ -1,169 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elimatic - Keep track of your cost</title>
-  <meta name="description" content="Elimatic helps procurement and engineering teams keep track of costs and validate PCR design-change prices with confidence.">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="icon" href="./assets/favicon.png">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Elimatic — Find the cost hiding in what you build</title>
+<meta name="description" content="Elimatic uses AI to turn your own engineering and purchasing history into lower cost and better alternatives — quietly, alongside the tools your teams already use." />
+<link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+<link rel="icon" type="image/png" href="./assets/favicon.png" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Elimatic — Find the cost hiding in what you build" />
+<meta property="og:description" content="AI that turns your own engineering and purchasing history into lower cost and smarter alternatives." />
+<meta property="og:image" content="./assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Archivo+Expanded:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="#" class="brand" aria-label="Elimatic">
-      <img src="./assets/logo-mark.svg" class="brand-logo" alt="Elimatic logo mark" />
-      <span class="brand-text">
-        <span class="brand-word">ELIMAT</span><span class="brand-i">I</span><span class="brand-c">C</span>
-      </span>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="30 70 240 130" fill="none" aria-hidden="true">
+        <defs><linearGradient id="em-hdr" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E0A374"/><stop offset="1" stop-color="#B5703F"/></linearGradient></defs>
+        <path d="M50 150 C90 80 150 80 190 150 C220 190 260 180 250 120" stroke="url(#em-hdr)" stroke-width="13" stroke-linecap="round"/>
+        <rect x="37" y="138" width="17" height="23" rx="3.5" fill="url(#em-hdr)"/>
+        <rect x="243" y="107" width="17" height="23" rx="3.5" fill="url(#em-hdr)"/>
+      </svg>
+      ELIMATIC
     </a>
-    <nav class="links">
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
-      <a href="#demo">Book a Demo</a>
+    <nav class="nav-links">
+      <a href="#what">What it does</a>
+      <a href="#approach">Approach</a>
       <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#demo">Book a demo</a>
     </nav>
+    <a class="btn btn-primary nav-toggle" href="#demo">Book a demo</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-center">
-    <h1>Keep track of your cost — approve PCR prices with <span class="accent">confidence</span>.</h1>
-    <p class="sub">Elimatic compares design-change items to your historical data, quantity, and explains every change.</p>
-    <div class="hero-cta">
-      <a class="btn primary" href="#demo"><span>Book a Demo</span></a>
-      <a class="btn ghost" href="#how">See how it works</a>
-    </div>
-  </div>
-</section>
+<main id="top">
 
-<section id="features" class="section">
-  <div class="container">
-    <h2 class="centered">Everything your team needs to justify PCR changes</h2>
-    <p class="section-sub centered">Clear, explainable, and audit-ready decisions — aligned with your procurement standards.</p>
-    <div class="features-grid">
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 2v6h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow reveal">AI cost intelligence</div>
+        <h1 class="reveal">Find the cost<br>hiding in <em>what you build.</em></h1>
+        <p class="lede reveal">Elimatic learns from your own engineering and purchasing history to surface savings and smarter alternatives — quietly, alongside the tools your teams already use.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#demo">Book a demo <span class="arw">→</span></a>
+          <a class="btn btn-ghost" href="#what">What it does</a>
         </div>
-        <h3>Create or upload PCRs</h3>
-        <p>Paste line items or upload CSV/Excel. Edit then evaluate instantly.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M3 3v18h18" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 15l4-4 3 3 5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Fair price ranges</h3>
-        <p>Percentiles adjusted historical data.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Explainable AI</h3>
-        <p>See top comparables, adjustments, and the reasoning behind each change.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Item suggestion</h3>
-        <p>Propose optional items with same properties. </p>
-      </div>
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Audit-ready exports</h3>
-        <p>Summaries with rationale for every line item for easy approvals.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-wrap">
-          <svg viewBox="0 0 24 24" class="icon"><path d="M12 2l7 4v6c0 5-3.5 9-7 10-3.5-1-7-5-7-10V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Built for teams</h3>
-        <p>Consistent, defensible decisions across buyers and engineers.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="how" class="section alt">
-  <div class="container">
-    <h2 class="centered">How it works</h2>
-    <div class="steps-pro">
-      <div class="step">
-        <div class="num">1</div>
-        <div class="content">
-          <h3>Upload or enter your PCR items.</h3>
-          <p>Paste or import CSV/Excel; edit inline and validate in seconds.</p>
+  <!-- WHAT IT DOES -->
+  <section class="section" id="what">
+    <div class="wrap">
+      <div class="cap-head reveal">
+        <div class="eyebrow">What it does</div>
+        <h2>Not a calculator. A second opinion on every cost decision.</h2>
+      </div>
+      <div class="caps">
+        <div class="cap reveal">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.5-7 9-7 9 7 9 7-3.5 7-9 7-9-7-9-7Z"/><circle cx="12" cy="12" r="2.5"/></svg>
+          <h3>See cost early</h3>
+          <p>Understand what a design or a decision truly costs before it's locked in — while there's still room to change it.</p>
+        </div>
+        <div class="cap reveal">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l5-5-5-5"/><path d="M12 19h8"/><path d="M20 7l-5 5 5 5" opacity=".45"/></svg>
+          <h3>Better alternatives</h3>
+          <p>AI proposes lower-cost options with the same properties, ranked by risk — so a swap is a choice, not a gamble.</p>
+        </div>
+        <div class="cap reveal">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M5 8l7-5 7 5"/><path d="M5 8v6l7 4 7-4V8"/></svg>
+          <h3>Decisions you can defend</h3>
+          <p>Every number comes with the evidence and reasoning behind it. Confident sign-off, no black box.</p>
         </div>
       </div>
-      <div class="step">
-        <div class="num">2</div>
-        <div class="content">
-          <h3>Match to historical comparables</h3>
-          <p>Historical data is used for comparison for each change.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="num">3</div>
-        <div class="content">
-          <h3>Explanations</h3>
-          <p>See the evidence behind every change — fully explainable.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="num">4</div>
-        <div class="content">
-          <h3>Export & finalize approvals</h3>
-          <p>Generate audit-ready summaries for fast sign-off.</p>
-        </div>
-      </div>
-      <div class="connector"></div>
     </div>
-    <div class="center cta-under-steps">
-      <a class="btn primary" href="#demo"><span>Book a Demo</span></a>
+  </section>
+
+  <!-- APPROACH -->
+  <section class="section approach" id="approach">
+    <div class="wrap">
+      <div class="app-top">
+        <div class="reveal">
+          <div class="eyebrow">The approach</div>
+          <h2>Built on your data. Answerable to your team.</h2>
+        </div>
+        <p class="reveal">Elimatic doesn't ask you to change how you work or trust a benchmark you've never seen. It reasons from your own history and shows its work.</p>
+      </div>
+      <div class="app-grid">
+        <div class="app reveal">
+          <h3>Your history, not benchmarks</h3>
+          <p>Reasons from your own costs and components — not an industry average.</p>
+        </div>
+        <div class="app reveal">
+          <h3>Explainable by design</h3>
+          <p>Every number comes with the evidence behind it. No black box.</p>
+        </div>
+        <div class="app reveal">
+          <h3>Sits alongside your tools</h3>
+          <p>No rip-and-replace. It works next to what your teams already use.</p>
+        </div>
+        <div class="app reveal">
+          <h3>Your data stays yours</h3>
+          <p>Runs on your own infrastructure. Nothing leaves your control.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="demo" class="section">
-  <div class="container contact">
-    <h2 class="centered">Book a Demo</h2>
-    <form id="contactForm" class="contact-form">
-      <input required name="name" placeholder="Your name">
-      <input required name="email" type="email" placeholder="Work email">
-      <input name="company" placeholder="Company">
-      <textarea name="message" rows="4" placeholder="Mail will be sent to contact@elimatic.se."></textarea>
-      <button class="btn primary" type="submit"><span>Request Demo</span></button>
-      <p id="formMsg" class="muted"></p>
-    </form>
-  </div>
-</section>
+  <!-- CTA / DEMO -->
+  <section class="section cta-band" id="demo">
+    <div class="wrap cta-inner">
+      <div class="reveal">
+        <div class="eyebrow">Book a demo</div>
+        <h2 style="margin-top:16px">See what Elimatic finds in <em>your</em> numbers.</h2>
+        <p class="sub">A short walkthrough on your data or ours. We'll show you where the savings actually sit.</p>
+      </div>
+      <div class="form reveal">
+        <div class="row">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="row">
+          <label for="email">Work email</label>
+          <input id="email" type="email" placeholder="you@company.com" />
+        </div>
+        <div class="row">
+          <label for="company">Company</label>
+          <input id="company" type="text" placeholder="Company" />
+        </div>
+        <button class="btn btn-primary" id="demoBtn" type="button">Request demo <span class="arw">→</span></button>
+      </div>
+    </div>
+  </section>
 
-<section id="faq" class="section alt">
-  <div class="container faq">
-    <h2 class="centered">FAQ</h2>
-    <details><summary>What data does it use?</summary><p>Your historical purchases/quotes.</p></details>
-    <details><summary>Can we change the rules?</summary><p>Yes, all factors are configurable for your business.</p></details>
-    <details><summary>Will it work with our ERP?</summary><p>Demo is standalone. Integrations are available for enterprise plans.</p></details>
-    <details><summary>Is our data secure?</summary><p>Data stays local during demo; private hosting available.</p></details>
-  </div>
-</section>
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="wrap" style="max-width:860px">
+      <h2 class="reveal">Questions, answered</h2>
+      <div class="faq-list reveal">
+        <details>
+          <summary>Do we have to change our workflow? <span class="plus"></span></summary>
+          <p>No. Elimatic sits alongside the tools your teams already use — nothing to rip out or relearn.</p>
+        </details>
+        <details>
+          <summary>Where does it run? <span class="plus"></span></summary>
+          <p>Locally during evaluation, and on private hosting for production. Your data stays within your control at every stage.</p>
+        </details>
+        <details>
+          <summary>Can we tune how it reasons? <span class="plus"></span></summary>
+          <p>Yes. The factors that shape its judgment are configurable to fit how your business actually makes decisions.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
 
-<footer class="footer">
-  <div class="container footgrid">
-    <a href="#" class="brand foot-brand" aria-label="Elimatic">
-      <img src="./assets/logo-mark.svg" class="brand-logo" alt="Elimatic logo mark">
-      <span class="brand-text"><span class="brand-word">ELIMAT</span><span class="brand-i">I</span><span class="brand-c">C</span></span>
-    </a>
-    <div class="small muted">© <span id="yr"></span> Elimatic. All rights reserved.</div>
-    <div class="small"><a href="#features">Features</a> · <a href="#how">How it works</a> · <a href="#demo">Book a Demo</a> · <a href="#faq">FAQ</a></div>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <a class="brand" href="#top">
+        <svg class="mark" viewBox="30 70 240 130" fill="none" aria-hidden="true">
+          <defs><linearGradient id="em-ft" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E0A374"/><stop offset="1" stop-color="#B5703F"/></linearGradient></defs>
+          <path d="M50 150 C90 80 150 80 190 150 C220 190 260 180 250 120" stroke="url(#em-ft)" stroke-width="13" stroke-linecap="round"/>
+          <rect x="37" y="138" width="17" height="23" rx="3.5" fill="url(#em-ft)"/>
+          <rect x="243" y="107" width="17" height="23" rx="3.5" fill="url(#em-ft)"/>
+        </svg>
+        ELIMATIC
+      </a>
+      <p>AI cost intelligence for the people who decide what things cost.</p>
+      <div class="foot-legal">© Elimatic AB · Göteborg, Sweden</div>
+    </div>
+    <div class="foot-links">
+      <a href="#what">What it does</a>
+      <a href="#approach">Approach</a>
+      <a href="#demo">Book a demo</a>
+      <a href="#faq">FAQ</a>
+    </div>
   </div>
 </footer>
 
 <script src="./script.js" defer></script>
-
 </body>
 </html>
