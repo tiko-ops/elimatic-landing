@@ -5,7 +5,10 @@ export const site = {
   name: "Elimatic",
   /** Public contact email shown in the footer, contact page and legal pages. */
   contactEmail: "contact@elimatic.se",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, ""),
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.NODE_ENV === "production" ? "https://www.elimatic.se" : "http://localhost:3000")
+  ).replace(/\/$/, ""),
   title: "Elimatic | Cost, optimized by AI",
   description:
     "Put in your engineering data. Elimatic returns the cost impact, the savings and lower-cost alternatives, instantly. Lower cost, less manual work, faster decisions.",
