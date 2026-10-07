@@ -13,21 +13,8 @@ This site uses the following open-source work.
 
 Next.js, React and Tailwind CSS are used under the MIT license.
 
-## Company logos
+## Company names
 
-The logos in the "With experience from" strip are trademarks of their respective owners and
-are shown to describe the team's experience, not as endorsements. Confirm you have permission
-to display each one before publishing.
-
-Originals live in `assets/logos/`; `npm run logos` converts them to the single-tone PNGs in
-`public/logos/` that the site uses.
-
-| Logo | Source |
-| --- | --- |
-| Volvo Cars, Volvo Trucks (Volvo iron mark, names set as text) | Wikimedia Commons: `Volvo-Iron-Mark-Black.svg` |
-| Polestar | Wikimedia Commons: `Polestar_Logo.svg` (wordmark) and `Polestar_logo_2020.svg` (symbol, background removed) |
-| Zeekr | Wikimedia Commons: `Zeekr_logo.svg` |
-| Lear | Wikimedia Commons: `Lear_Corporation_logo.svg` |
-| Chalmers | Wikimedia Commons: `Chalmers_wordmark.svg` |
-| Quokka | quokka.se (`/quokka-logo.jpg`), cropped and made transparent |
-| CEVT | No official file found; shown as text. Add the real logo to `assets/logos/` and run `npm run logos`. |
+The "With experience from" strip shows company names as plain text only; no logos are used.
+Company names are trademarks of their respective owners and describe the team's experience,
+not endorsements.

@@ -11,8 +11,7 @@ npm run dev
 
 Open http://localhost:3000.
 
-Other scripts: `npm run lint`, `npm run typecheck`, `npm run build`, `npm start`,
-and `npm run logos` (see below).
+Other scripts: `npm run lint`, `npm run typecheck`, `npm run build`, `npm start`.
 
 ## Where things live
 
@@ -22,7 +21,7 @@ and `npm run logos` (see below).
 | Landing page sections | `components/Hero.tsx`, `components/sections/*` |
 | Hero coin stacks | `components/HeroVisual.tsx` |
 | Interactive savings chart | `components/SavingsChart.tsx` |
-| Logo strip | `components/sections/LogoMarquee.tsx` |
+| Experience strip (company names) | `components/sections/LogoMarquee.tsx` |
 | Demo request form | `components/ContactForm.tsx` |
 | Form API (validation, honeypot, rate limit, email via one.com) | `app/api/contact/route.ts` |
 | Privacy, terms and cookie pages | `app/privacy`, `app/terms`, `app/cookies` |
@@ -30,11 +29,10 @@ and `npm run logos` (see below).
 | Fonts (self-hosted, no network calls) | `app/fonts.ts`, `app/fonts/` |
 | Open-source credits, licenses and logo sources | `THIRD_PARTY_NOTICES.md` |
 
-## Company logos
+## Experience strip
 
-Original logo files live in `assets/logos/`. Run `npm run logos` to turn them into the
-single-tone PNGs in `public/logos/` that the site uses, then reference the file in
-`components/sections/LogoMarquee.tsx`. Confirm you have permission to show each logo.
+The "With experience from" strip shows company names as plain text. Edit the list in
+`components/sections/LogoMarquee.tsx`.
 
 ## Demo requests
 
