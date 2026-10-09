@@ -58,7 +58,7 @@ export default function HeroVisual() {
       className="relative flex min-h-[170px] w-full flex-1 items-end justify-center overflow-hidden rounded-[24px] border border-ink/15 bg-white px-5 pt-6 pb-5 shadow-card sm:px-10 sm:pb-7"
       style={{
         ["--coin-w" as string]: "clamp(76px, 11vw, 132px)",
-        ["--coin-h" as string]: "clamp(18px, 3svh, 30px)",
+        ["--coin-h" as string]: "clamp(14px, 2.25svh, 27px)",
       }}
     >
       <div aria-hidden="true" className="flex items-end gap-[clamp(1.5rem,7vw,7rem)]">

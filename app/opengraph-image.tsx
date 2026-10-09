@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Elimatic. Cost, optimized by AI.";
+export const alt = "Elimatic. Less cost. Same quality. With AI.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -25,7 +25,7 @@ export default function OpengraphImage() {
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 96, fontWeight: 700, letterSpacing: -4, lineHeight: 1.02 }}>
-            Cost, optimized by AI.
+            Less cost. Same quality.
           </div>
           <div style={{ marginTop: 28, fontSize: 34, color: "#63635e", maxWidth: 900 }}>
             Engineering data in. Cost impact, savings and lower-cost alternatives out.

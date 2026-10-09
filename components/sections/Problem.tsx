@@ -65,7 +65,7 @@ function OneSheet() {
 
 export default function Problem() {
   return (
-    <section aria-labelledby="problem-title" className="px-4 py-28 sm:px-6 md:py-40">
+    <section aria-labelledby="problem-title" className="px-4 pt-14 pb-28 sm:px-6 md:pt-20 md:pb-40">
       <div className="mx-auto max-w-[1200px]">
         <div className="grid gap-12 md:grid-cols-12 md:gap-10">
           <div data-reveal className="md:col-span-6">

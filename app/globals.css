@@ -68,7 +68,7 @@ body {
 /* ---------- Typography helpers ---------- */
 @utility text-display {
   /* ~40px on phones → 96px on large desktops, also capped by viewport height */
-  font-size: clamp(2.5rem, min(1.2rem + 5.6vw, 10.5svh), 6rem);
+  font-size: clamp(2.5rem, min(1.2rem + 5.6vw, 9svh), 6rem);
   line-height: 1;
   letter-spacing: -0.04em;
   font-weight: 640;

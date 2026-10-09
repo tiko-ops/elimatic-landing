@@ -1,5 +1,6 @@
 import Link from "next/link";
 import HeroVisual from "./HeroVisual";
+import LogoMarquee from "./sections/LogoMarquee";
 import { ArrowRight, CaretRight } from "@phosphor-icons/react/dist/ssr";
 
 const steps = ["Connect your data", "AI finds the savings", "You decide"];
@@ -8,7 +9,7 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="hero-title"
-      className="mx-auto flex min-h-[calc(100svh-var(--header-h))] max-w-[1200px] flex-col px-4 pt-[clamp(1.75rem,5svh,3.5rem)] pb-[clamp(1.25rem,3.5svh,2.5rem)] sm:px-6"
+      className="mx-auto flex min-h-[calc(100svh-var(--header-h))] max-w-[1200px] flex-col px-4 pt-[clamp(1rem,3svh,2.5rem)] pb-[clamp(0.75rem,2svh,1.5rem)] sm:px-6"
     >
       <div className="flex flex-col items-center text-center">
         <h1
@@ -16,9 +17,12 @@ export default function Hero() {
           className="hero-rise text-display sm:mt-2"
           style={{ ["--d" as string]: "60ms" }}
         >
-          Cost, optimized
+          Less cost.
           <br />
-          by AI.
+          Same quality.
+          <span className="mt-[clamp(0.25rem,1svh,0.6rem)] block text-[0.38em] leading-tight tracking-[-0.02em] text-accent">
+            With AI.
+          </span>
         </h1>
 
         <p
@@ -29,7 +33,7 @@ export default function Hero() {
         </p>
 
         <div
-          className="hero-rise mt-[clamp(1.25rem,3.2svh,2rem)] flex flex-wrap items-center justify-center gap-x-7 gap-y-3"
+          className="hero-rise mt-[clamp(1rem,2.4svh,1.75rem)] flex flex-wrap items-center justify-center gap-x-7 gap-y-3"
           style={{ ["--d" as string]: "260ms" }}
         >
           <Link
@@ -55,7 +59,7 @@ export default function Hero() {
 
         <ol
           aria-label="How Elimatic works"
-          className="hero-rise mt-[clamp(1.5rem,3.8svh,2.5rem)] grid w-full max-w-[24rem] grid-cols-3 text-[13px] leading-snug sm:flex sm:max-w-none sm:items-center sm:justify-center sm:text-[14px]"
+          className="hero-rise mt-[clamp(1rem,2.6svh,2rem)] grid w-full max-w-[24rem] grid-cols-3 text-[13px] leading-snug sm:flex sm:max-w-none sm:items-center sm:justify-center sm:text-[14px]"
           style={{ ["--d" as string]: "340ms" }}
         >
           {steps.map((step, i) => (
@@ -87,11 +91,13 @@ export default function Hero() {
         </ol>
       </div>
 
-      <div className="mt-[clamp(1.5rem,4svh,2.75rem)] flex min-h-[170px] flex-1 items-stretch justify-center">
+      <div className="mt-[clamp(1rem,2.5svh,2rem)] flex min-h-[170px] flex-1 items-stretch justify-center">
         <div className="flex max-h-[300px] w-full max-w-[960px] sm:max-h-[360px]">
           <HeroVisual />
         </div>
       </div>
+
+      <LogoMarquee compact />
     </section>
   );
 }

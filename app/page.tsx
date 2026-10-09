@@ -5,7 +5,6 @@ import Faq from "@/components/sections/Faq";
 import FinalCta from "@/components/sections/FinalCta";
 import Problem from "@/components/sections/Problem";
 import Impact from "@/components/sections/Impact";
-import LogoMarquee from "@/components/sections/LogoMarquee";
 import Solution from "@/components/sections/Solution";
 import WhyElimatic from "@/components/sections/WhyElimatic";
 
@@ -31,7 +30,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organization).replace(/</g, "\\u003c") }}
       />
       <Hero />
-      <LogoMarquee />
       <Problem />
       <Solution />
       <Impact />
