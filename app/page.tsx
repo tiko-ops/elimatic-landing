@@ -10,6 +10,15 @@ import WhyElimatic from "@/components/sections/WhyElimatic";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
+  // Page-level openGraph replaces the root one, so repeat the shared fields.
+  openGraph: {
+    type: "website",
+    siteName: site.name,
+    title: site.title,
+    description: site.description,
+    url: "/",
+    locale: "en_US",
+  },
 };
 
 const organization = {

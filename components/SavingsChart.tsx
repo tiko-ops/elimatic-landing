@@ -102,16 +102,16 @@ export default function SavingsChart() {
       ...LATER.map((c) => ({ t: t0 + c.o, d: c.d, w: k })),
     ];
 
-    const samples = new Set<number>();
-    for (let i = 0; i <= 160; i++) samples.add(i / 160);
-    // Only sample inside the visible timeline; changes pushed past the end are off-chart.
+    // Every curve is straight between change points, so those (plus both ends) are the only
+    // samples needed. Changes pushed past the end of the timeline are off-chart.
+    const samples = new Set<number>([0, 1]);
     changes.forEach((c) => {
       if (c.t > 0 && c.t < 1) samples.add(c.t);
     });
     const ts = [...samples].sort((a, b) => a - b);
 
-    const x = (t: number) => (t * W).toFixed(2);
-    const y = (s: number) => (H - (s / yMax) * H).toFixed(2);
+    const x = (t: number) => (t * W).toFixed(1);
+    const y = (s: number) => (H - (s / yMax) * H).toFixed(1);
 
     let lower = ts.map(() => 0);
     const bands = changes.map((c) => {

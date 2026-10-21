@@ -113,16 +113,19 @@ export async function POST(req: Request) {
 
   const entry = { receivedAt: new Date().toISOString(), ...data };
 
-  console.log("[contact] New demo request:", entry);
+  // Keep personal details out of the hosting logs.
+  console.log("[contact] New demo request received.");
 
-  // Save to file (works locally; most hosts have no writable disk) and email it.
+  // Save to file (works locally; Vercel has no writable disk, so skip it there) and email it.
   // The request succeeds if at least one of the two worked.
   let saved = false;
-  try {
-    await saveSubmission(entry);
-    saved = true;
-  } catch (err) {
-    console.error("[contact] Could not save submission to file:", err);
+  if (!process.env.VERCEL) {
+    try {
+      await saveSubmission(entry);
+      saved = true;
+    } catch (err) {
+      console.error("[contact] Could not save submission to file:", err);
+    }
   }
 
   let emailed = false;

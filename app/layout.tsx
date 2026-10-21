@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: site.title,
     description: site.description,
-    url: "/",
     locale: "en_US",
   },
   twitter: {

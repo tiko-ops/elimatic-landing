@@ -22,16 +22,21 @@ function clean(value: unknown): string {
   return typeof value === "string" ? value.trim() : "";
 }
 
+/** Single-line fields: collapse line breaks and other control characters to spaces. */
+function cleanLine(value: unknown): string {
+  return clean(value).replace(/[\u0000-\u001f\u007f]+/g, " ");
+}
+
 /** Shared by the client form and the route handler. */
 export function validateDemoRequest(input: Record<string, unknown>): {
   data: DemoRequest;
   errors: FieldErrors;
 } {
   const data: DemoRequest = {
-    name: clean(input.name),
-    email: clean(input.email).toLowerCase(),
-    company: clean(input.company),
-    role: clean(input.role),
+    name: cleanLine(input.name),
+    email: cleanLine(input.email).toLowerCase(),
+    company: cleanLine(input.company),
+    role: cleanLine(input.role),
     message: clean(input.message),
   };
 

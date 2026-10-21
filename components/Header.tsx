@@ -9,15 +9,16 @@ export default function Header() {
           <Wordmark />
         </Link>
         <nav aria-label="Main" className="flex items-center gap-3 sm:gap-7">
+          {/* The wordmark already links home; on phones this link only crowds the logo. */}
           <Link
             href="/"
-            className="rounded-md text-[13px] text-ink/75 sm:text-[14px] transition-colors hover:text-ink"
+            className="hidden rounded-md py-2 text-[13px] text-ink/75 transition-colors hover:text-ink sm:inline sm:text-[14px]"
           >
             Home
           </Link>
           <Link
             href="/contact"
-            className="rounded-md text-[13px] text-ink/75 sm:text-[14px] transition-colors hover:text-ink"
+            className="rounded-md py-2 text-[13px] text-ink/75 sm:text-[14px] transition-colors hover:text-ink"
           >
             Contact
           </Link>
